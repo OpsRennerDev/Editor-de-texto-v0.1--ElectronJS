@@ -1,0 +1,96 @@
+*{  /* Html em geral */
+    padding: 0;
+    margin: 0;
+}
+@media (prefers-color-scheme: dark) {
+    body { background: #333; color: white; }
+}
+@media (prefers-color-scheme: light) {
+    body { background: #ddd; color: black; 
+    }  
+}
+.cabeca{ /* Menu Superior */
+    background-color: #ddd;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.fonts{ /*Sub Menu Superior */
+    padding-top: 2%;
+    align-items: center;
+    text-align: left;
+    padding-left: 2%;
+}
+#edit{/* Area de Escrita */
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    width:90%;
+    height: 120vh;
+    padding-top: 5rem;
+    padding-left: 4%;
+    margin-left: 5%;
+    position: relative;
+}
+.butts{/*Botões do menu superior espaçamento */
+    letter-spacing: 0.2rem; /*um rem equivale a 16 px*/
+}
+.negrito,
+.italico,
+.sublinhado,
+.taman{ /* Estilização dos botões */
+    height: auto;
+    width: 30px;
+    font-size: 14px;
+}
+.negrito,
+.italico,
+.sublinhado{ /* Estilização dos botões */
+    border: none;
+    background-color: white;
+    color: black;
+}
+.negrito:hover,
+.italico:hover,
+.sublinhado:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.negrito1{/* Negrito linkado ao script */
+    font-weight: bold;
+}
+.italic1{/* Itálico linkado ao script */
+    font-style: italic;
+}
+.subli1{/* Sublinhado linkado ao script */
+    text-decoration: underline;
+}
+.centra{/* Centralizar linkado ao script */
+    text-align: center;
+}
+.butzin{/* Estilização dos botões laterais direitos menu superior */
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    background-color: #add8e6;
+    color: rgb(42, 42, 42);
+}
+.butzin:hover{
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    background-color: rgb(42, 42, 42);
+    color: #add8e6;
+    border: 1px solid #add8e6;
+}
+.buttons{ /* Botões lateral direito menu superior */
+    float: right;
+    padding-right: 1rem;
+}
+a{ /* Assinatura */
+    float: right;
+    padding-right: 0.8rem;
+    text-decoration: none;
+    text-transform: none;
+    color: Black;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Raleway:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title id="title">Editor de Texto v0.1</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="cabeca"> <!-- Topo da aplicação -->
+    <div class="fonts">
+      <a href="http://">HickDev</a>
+      <a>//</a>
+      <a href="http://">DevRobh</a> <!-- SubGrupo do topo da aplicação --> 
+      <div class="butts"><!-- Botões do menu superior -->
+        <select id="trocaFonte" onchange="mudarFonte()"><!-- Fonte -->
+          <option>Arial</option>
+          <option>Verdana</option>
+          <option>Calibri</option>
+          <option>Consolas</option>
+          <option>Helvetica</option>
+          <option>Palette Mosaic</option>
+          <option>Raleway</option>
+          <option>Style Script<option>
+        </select>
+        <input type="text" class="taman" id="tamanho" onchange="mudarTamanho()"><!-- Tamanho de letra -->
+        <button class="negrito"  onclick="mudarBotao1()"><b>N</b></button><!-- Botão negrito -->
+        <button class="italico"  onclick="mudarBotao2()"><i>I</i></button><!-- Botão itálico -->
+        <button class="sublinhado"  onclick="mudarBotao3()"><u>S</u></button><!-- Botão Sublinhado -->
+      </div>
+      <div class="buttons">
+        <button class="butzin" onclick="mudarBotao4()">Apagar Tudo</button><!-- Apagar tudo -->
+        <button class="butzin" onclick="mudarBotao5()">Centralizar</button><!-- Salvar -->
+      </div>
+    </div>      
+  </div>
+  <div class="corpo"><!-- Corpo de aplicação -->
+    <textarea id="edit" onkeyup="handleChange()"></textarea><!-- Area de Escrita -->
+  </div>
+</body>
+<script src="./renderer.js"></script><!-- Script Renderizador -->
+</html>

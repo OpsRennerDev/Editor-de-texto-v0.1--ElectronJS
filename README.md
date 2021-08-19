@@ -3,9 +3,11 @@
 
 Para iniciar o projeto basta ter o Node versão LTS instalado.
 Para instalar as dependencias do electron.
-
-$npm install electron
+```
+npm install electron
+```
 
 Para rodar
-
-$npm start
+```
+npm start
+```
